@@ -122,9 +122,5 @@ dmypy.json
 *.onnx
 *.engine
 runs/
-test/output_optimized_retry/
+test/
 deep_sort_pytorch.zip
-# Consider if the 'test/' directory itself should be ignored or if specific generated files within it should be.
-# If test/input contains essential data, don't ignore the whole test/ directory.
-# For now, let's assume test/input is needed.
-test/output*/
