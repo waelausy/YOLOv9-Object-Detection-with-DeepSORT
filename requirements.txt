@@ -29,7 +29,8 @@ seaborn>=0.11.0
 
 # Export ----------------------------------------------------------------------
 # coremltools>=6.0
-# onnx>=1.9.0
+onnx>=1.9.0
+onnxruntime>=1.21.1
 # onnx-simplifier>=0.4.1
 # nvidia-pyindex
 # nvidia-tensorrt
