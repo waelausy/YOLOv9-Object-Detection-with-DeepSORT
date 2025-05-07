@@ -46,3 +46,4 @@ onnxruntime>=1.21.1
 # mss
 albumentations>=1.0.3
 pycocotools>=2.0
+easydict>=1.9

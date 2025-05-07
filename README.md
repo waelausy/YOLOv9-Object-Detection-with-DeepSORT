@@ -73,6 +73,10 @@ python detect_dual_tracking.py --weights 'yolov9-c.pt' --source 'your video.mp4'
 #for detection and tracking with trails 
 python detect_dual_tracking.py --weights 'yolov9-c.pt' --source 'your video.mp4' --device 0 --draw-trails --project runs/track --name trails_c
 
+### Note importante pour PyTorch 2.6+
+
+Depuis PyTorch 2.6, le paramètre par défaut `weights_only` de `torch.load()` a été changé à `True` pour des raisons de sécurité. Ce projet utilise `weights_only=False` dans `models/experimental.py` pour permettre le chargement correct des modèles YOLOv9. Cette modification est nécessaire pour la compatibilité avec les versions récentes de PyTorch.
+
 ### Running with ONNX Models (CPU Recommended)
 
 If you have exported the models to ONNX format, you can use them with `detect_onnx_tracking.py` or `detect_onnx_simple.py`:
